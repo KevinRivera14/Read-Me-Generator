@@ -1,9 +1,9 @@
-// import required modules
+// to start off this assignment i must first import the modules i need
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-// linking to file where the README is developed
-const generatePage = require("./utils/generateMarkdown.js");
+// this is where i will be linking the file where my README will appear 
+const createPage = require("./utils/generateMarkdown.js");
 
 const questions = () => {
     // use inquirer to prompt for questions
@@ -11,14 +11,14 @@ const questions = () => {
         {
             type: "input",
             message:
-                "Enter the title of your project:",
-            name: "project_title",
+                "what is the title of your project:",
+            name: "name_project",
         },
         {
             type: "list",
             name: "license",
             message:
-                "What kind of license should your project have?",
+                "in this project of yours what will license will it require ?",
             choices: ["MIT", "GNU",],
             default: ["MIT"],
             validate: (nameInput) => {
@@ -107,7 +107,7 @@ const writeFile = data => {
 questions()
     // get user answers
     .then(answers => {
-        return generatePage(answers);
+        return createPage(answers);
     })
     //using data to display on page
     .then(data => {
