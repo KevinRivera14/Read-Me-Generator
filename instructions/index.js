@@ -21,12 +21,12 @@ const questions = () => {
                 "in this project of yours what will license will it require ?",
             choices: ["MIT", "GNU",],
             default: ["MIT"],
-            validate: (nameInput) => {
-                if (nameInput) {
+            validate: (name) => {
+                if (name) {
                     return true;
                 } else {
                     console.log(
-                        "Please choose a license!"
+                        " choose a license!"
                     );
                     return false;
                 }
@@ -35,76 +35,76 @@ const questions = () => {
         {
             type: "input",
             message:
-                "Please write a description of your project:",
-            name: "description",
+                "if you were to kind write a brief description that relates to your project:",
+            name: "explanation",
         },
         {
             type: "input",
             message:
-                "What are the steps required to install your project?",
+                "What steps are required for you project?",
             name: "installation",
         },
         {
             type: "input",
             message:
-                "How do you use this app?",
-            name: "usage",
+                "How would one use your app ?",
+            name: "practice",
         },
         {
             type: "input",
             message:
-                'What does the user need to know about contributing to the repo? If you do not allow contributions, type "N/A":',
+                'what does one need to know before contributing ?',
             name: "contributing",
         },
         {
             type: "input",
             message:
-                "What is the URL to your Github account?:",
-            name: "github_url",
+                "Github URL ?:",
+            name: "url_github",
         },
         {
             type: "input",
             message:
-                "If a user has questions about your project, what is your email address?:",
+                "what email address do you use to answer questions about your app ?:",
             name: "email",
         },
         {
             type: "input",
             message:
-                'What command should be entered to run tests? If no tests exist, type "N/A".',
+                'in order to run test,what command should be entered ?',
             name: "tests",
         },
         {
             type: "input",
             message:
-                "Enter a copyright year for your project:",
+                "what year was your project made in ?",
             name: "copyright_year",
         },
         {
             type: "input",
             message:
-                "Enter your name for the copyright section of the README:",
+                "Enter the rightful owners name ",
             name: "author",
         },
     ]);
 };
 
-// function write README file using file system system
+
 const writeFile = data => {
     fs.writeFile('./instructions/README.md', data, err => {
         // if there is an error 
         if (err) {
             console.log(err);
             return;
-            // when the README has been created 
+            // this only works when the readme is crated  
         } else {
             console.log("Your README has been successfully created!")
         }
     })
 };
 
-// function to initialize program
-questions()
+// the function below will initialize the program
+concerns()
     // get user answers
     .then(answers => {
         return createPage(answers);
