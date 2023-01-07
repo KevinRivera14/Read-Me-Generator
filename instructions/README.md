@@ -20,3 +20,5 @@
 
 
 README Generator, created by Kevin Rivera && 2022 
+
+plese be nice im still learning 
