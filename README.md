@@ -20,5 +20,7 @@
 
 ![walkthrough](https://drive.google.com/file/d/1dnp2gDVjWtwyiMVezFHg33Hx82sBqiNT/view) 
 
+*note* if the video isnt showing copy the link in another tab url to see the video 
+
 README Generator, created by Kevin Rivera && 2022 
 
