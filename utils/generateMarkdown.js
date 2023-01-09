@@ -1,4 +1,4 @@
-// function to generate markdown for README
+// in this section of my code i will write code for my README
 const generateMarkdown = data => {
     return `# ${data.project_title}
     ![badge](https://img.shields.io/badge/license-${data.license}-brightgreen)
@@ -37,5 +37,5 @@ const generateMarkdown = data => {
   README Generator - Copyright ${data.copyright_year} ${data.author}`;
   }
   
-  // use for importing markdown in index
+  // it is very important to export my module 
   module.exports = generateMarkdown;

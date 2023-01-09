@@ -6,9 +6,8 @@
 # features
 - installation 
 - usage
-- Tests
-- license 
-- Questions
+
+
 
 # installation 
 - in order to install you must use npm install inquireer in order to generate a README.md 
@@ -16,11 +15,10 @@
 # usage 
 - Answer the question and enter information as best to your ability. 
 
-# license 
+ 
+# preview Of WALKTHROUGH VIDEO 
 
+![walkthrough](https://drive.google.com/file/d/1dnp2gDVjWtwyiMVezFHg33Hx82sBqiNT/view) 
 
 README Generator, created by Kevin Rivera && 2022 
 
-plese be nice im still learning 
-
-# preview TODO: ADD SCREEN RECORDING LINK 
