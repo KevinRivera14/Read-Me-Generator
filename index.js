@@ -6,7 +6,8 @@ const fs = require("fs");
 const createPage = require("./utils/generateMarkdown.js");
 
 const concerns = () => {
-    // use inquirer to prompt for questions
+    
+    // i decided to use inquirer in this part of my code 
     return inquirer.prompt([
         {
             type: "input",
@@ -32,6 +33,7 @@ const concerns = () => {
                 }
             },
         },
+        // these are where my questions will go 
         {
             type: "input",
             message:
@@ -92,11 +94,11 @@ const concerns = () => {
 
 const writeFile = data => {
     fs.writeFile('./instructions/README.md', data, err => {
-        // if there is an error 
+        
         if (err) {
             console.log(err);
             return;
-            // this only works when the readme is crated  
+             
         } else {
             console.log("Your README has been successfully created!")
         }
