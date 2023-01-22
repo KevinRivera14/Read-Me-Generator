@@ -1,5 +1,5 @@
 # undefined
-    ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
+    ![badge](https://img.shields.io/badge/license-undefined-brightgreen)
     
   ## Description
   undefined
@@ -12,7 +12,7 @@
   * [License](#license)
   * [Questions](#questions)
   ## Installation 
-  you must clone into your local machine
+  kevin
     
   ## Usage 
   undefined 
@@ -20,16 +20,16 @@
   ## Contributing
   *If you would like to contribute this project, you can follow these guidelines for how to do so.*
   <br />
-  how to clone into your local machine
+  kevin
   ## Questions?
   Questions about this project can be directed to:
-  - Email: kevthebarber14@gmail.com. 
+  - Email: kevin. 
   - You can view more of my projects at undefined.
   ## Tests
-  npm i first then node index
+  kevin
   ## License
-  ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
+  ![badge](https://img.shields.io/badge/license-undefined-brightgreen)
   <br />     
-  Content in this project is covered by the MIT license. 
+  Content in this project is covered by the undefined license. 
   -----------
-  README Generator - Copyright 2023 Kevin Rivera
+  README Generator - Copyright kevin kevin

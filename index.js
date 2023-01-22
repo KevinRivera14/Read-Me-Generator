@@ -3,47 +3,30 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 
 // this is where i will be linking the file where my README will appear 
-const createPage = require("./utils/generateMarkdown.js");
+const assemblePage = require("./utils/generateMarkdown.js");
 
 const concerns = () => {
-    
+     
     // i decided to use inquirer in this part of my code 
     return inquirer.prompt([
         {
             type: "input",
             message:
-                "what is the title of your project:",
+                "what is the label of your project:",
             name: "name_project",
         },
-        {
-            type: "list",
-            name: "license",
-            message:
-                "in this project of yours what will license will it require ?",
-            choices: ["MIT", "GNU",],
-            default: ["MIT"],
-            validate: (name) => {
-                if (name) {
-                    return true;
-                } else {
-                    console.log(
-                        " choose a license!"
-                    );
-                    return false;
-                }
-            },
-        },
+        ,
         // these are where my questions will go 
         {
             type: "input",
             message:
-                "if you were to kind write a brief description that relates to your project:",
+                "what does  your project consist off  ?:",
             name: "explanation",
         },
         {
             type: "input",
             message:
-                "What steps are required for you project?",
+                "What steps are necessary for Aquiring your project?",
             name: "installation",
         },
         {
@@ -55,37 +38,37 @@ const concerns = () => {
         {
             type: "input",
             message:
-                'what does one need to know before contributing ?',
+                'how do i contribute ?',
             name: "contributing",
         },
         {
             type: "input",
             message:
-                "Github URL ?:",
+                "Github ?:",
             name: "url_github",
         },
         {
             type: "input",
             message:
-                "what email address do you use to answer questions about your app ?:",
+                "what do you use for eletronic emails  ?:",
             name: "email",
         },
         {
             type: "input",
             message:
-                'in order to run test,what command should be entered ?',
+                'commands to run a test?',
             name: "tests",
         },
         {
             type: "input",
             message:
-                "what year was your project made in ?",
+                "What number is the year your project was made ?",
             name: "copyright_year",
         },
         {
             type: "input",
             message:
-                "Enter the rightful owners name ",
+                "Who Made this ReadME? ",
             name: "author",
         },
     ]);
@@ -109,7 +92,7 @@ const writeFile = data => {
 concerns()
     
     .then(answers => {
-        return createPage(answers);
+        return assemblePage(answers);
     })
     
     .then(data => {
